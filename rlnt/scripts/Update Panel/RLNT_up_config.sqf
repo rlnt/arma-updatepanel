@@ -4,6 +4,13 @@ Author:       Relentless
 Description:  Config for RLNT-CustomUpdatePanel
 */
 
+
+/*  Default RLNT Debug - DON'T TOUCH THIS  */
+if (rlnt_debug) then {
+  diag_log "[RLNT] The Costum Update Panel Config was succesfully loaded!";
+};
+
+
 ////////////////////////////////////////////////////////////
 ////  Side-Option:                                      ////
 ////  Default string that defines how to display the    ////

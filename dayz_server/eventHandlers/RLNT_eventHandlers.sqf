@@ -4,8 +4,20 @@ Author:       Relentless
 Description:  All server-sided Eventhandlers for RLNT-Additions
 */
 
-/*  Update Panel */
+
+/*  Default RLNT Debug  */
+if (rlnt_debug) then {
+  diag_log "[RLNT] The Server RLNT_eventHandlers.sqf was succesfully loaded!";
+};
+
+
+/*  Custom Update Panel  */
   "RLNT_up_global" addPublicVariableEventHandler {
+
+    if (rlnt_up_debug) then {
+      diag_log "[RLNT] The RLNT_up_global EventHandler was succesfully triggered!";
+    };
+
     RLNT_up_client = _this select 1;
     publicVariable "RLNT_up_client";
   };

@@ -8,7 +8,13 @@ private ["_upStyle","_upBgColor","_upFontColor","_upHeader","_upLine1","_upLine2
 disableSerialization;
 
 
-/*  Variables */
+/*  Default RLNT Debug  */
+if (rlnt_debug) then {
+  diag_log "[RLNT] The RLNT_up_setup.sqf was succesfully loaded!";
+};
+
+
+/*  Variables  */
 _upStyle      = _this select 0;
 _upBgColor    = _this select 1;
 _upFontColor  = _this select 2;
@@ -26,6 +32,11 @@ switch (_upStyle) do {
   case 1: {
     _layer cutRsc ["rlnt_updatepanel_style_1","PLAIN",1];
     sleep 0.01;
+
+    if (rlnt_up_debug) then {
+      diag_log "[RLNT] The RLNT_up_setup.sqf decided style 1!";
+    };
+
     _display    = uiNamespace getVariable["rlnt_updatepanel_style_1", displayNull];
     _cBgColor   = _display displayCtrl 1027;
     _cFontColor = [_display displayCtrl 1028,_display displayCtrl 1029,_display displayCtrl 1030];
@@ -34,20 +45,25 @@ switch (_upStyle) do {
     _cLine2     = _display displayCtrl 1030;
 
     //Set Background Color
-    _cBgColor ctrlSetBackgroundColor _upBgColor;
+      _cBgColor ctrlSetBackgroundColor _upBgColor;
     //Set Font Color
-    {
-      _x ctrlSetTextColor _upFontColor;
-    } forEach _cFontColor;
+      {
+        _x ctrlSetTextColor _upFontColor;
+      } forEach _cFontColor;
     //Set Text Header and Lines
-    _cHeader ctrlSetText(_upHeader);
-    _cLine1 ctrlSetText(_upLine1);
-    _cLine2 ctrlSetText(_upLine2);
+      _cHeader ctrlSetText(_upHeader);
+      _cLine1 ctrlSetText(_upLine1);
+      _cLine2 ctrlSetText(_upLine2);
   };
 
   case 2: {
     _layer cutRsc ["rlnt_updatepanel_style_2","PLAIN",1];
     sleep 0.01;
+
+    if (rlnt_up_debug) then {
+      diag_log "[RLNT] The RLNT_up_setup.sqf decided style 2!";
+    };
+
     _display    = uiNamespace getVariable["rlnt_updatepanel_style_2", displayNull];
     _cBgColor   = _display displayCtrl 1027;
     _cFontColor = [_display displayCtrl 1028,_display displayCtrl 1029,_display displayCtrl 1030];
@@ -57,21 +73,21 @@ switch (_upStyle) do {
     _cImg       = _display displayCtrl 1206;
 
     //Set Background Color
-    _cBgColor ctrlSetBackgroundColor _upBgColor;
+      _cBgColor ctrlSetBackgroundColor _upBgColor;
     //Set Font Color
-    {
-      _x ctrlSetTextColor _upFontColor;
-    } forEach _cFontColor;
+      {
+        _x ctrlSetTextColor _upFontColor;
+      } forEach _cFontColor;
     //Set Text Header and Lines
-    _cHeader ctrlSetText(_upHeader);
-    _cLine1 ctrlSetText(_upLine1);
-    _cLine2 ctrlSetText(_upLine2);
+      _cHeader ctrlSetText(_upHeader);
+      _cLine1 ctrlSetText(_upLine1);
+      _cLine2 ctrlSetText(_upLine2);
     //Set Image
-    _cImg ctrlSetText(_upImg);
+      _cImg ctrlSetText(_upImg);
   };
 
 };
 
-/*  Close Update Panel after set Duration */
+/*  Close Update Panel after set Duration  */
 sleep _upDuration;
 _layer cutRsc ["Default","PLAIN"];

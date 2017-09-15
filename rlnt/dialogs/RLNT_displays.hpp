@@ -4,5 +4,5 @@ Author:       Relentless
 Description:  All displays for RLNT-Additions
 */
 
-#include "RLNT_defines.hpp"
-#include "RLNT_updatepanel.hpp"
+#include "RLNT_defines.hpp"                                                     //Defines
+#include "RLNT_updatepanel.hpp"                                                 //Custom Update Panel

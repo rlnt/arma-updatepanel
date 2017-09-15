@@ -1,7 +1,7 @@
 /*
 Filename:     RLNT_updatepanel.hpp
 Author:       Relentless
-Description:  Dialog for RLNT-CustomUpdatePanel
+Description:  Displays for RLNT-CustomUpdatePanel
 Calculation:  1 GUI_GRID = 0.0173 * SafezoneH
 */
 
@@ -90,14 +90,6 @@ class rlnt_updatepanel_style_2 {
 			h = 0.11 * safezoneH;
 			colorBackground[] = {0,0,0,0.3};
 		};
-		class rlnt_frame_panel: RLNT_RscFrame
-		{
-			idc = 1806;
-			x = 0.0153125 * safezoneW + safezoneX;
-			y = 0.027 * safezoneH + safezoneY;
-			w = 0.174282 * safezoneW;
-			h = 0.1012 * safezoneH;
-		};
 		class rlnt_text_background: RLNT_RscText
 		{
 			idc = 1027;
@@ -106,6 +98,14 @@ class rlnt_updatepanel_style_2 {
 			w = 0.241237 * safezoneW;
 			h = 0.0989648 * safezoneH;
 			colorBackground[] = {0,0.2,0,0.7};
+		};
+		class rlnt_frame_panel: RLNT_RscFrame
+		{
+			idc = 1806;
+			x = 0.0153125 * safezoneW + safezoneX;
+			y = 0.027 * safezoneH + safezoneY;
+			w = 0.174282 * safezoneW;
+			h = 0.1012 * safezoneH;
 		};
 		class rlnt_text_header: RLNT_RscText
 		{

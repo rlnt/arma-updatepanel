@@ -8,7 +8,13 @@ private ["_upSide","_upStyle","_upBgColor","_upFontColor","_upHeader","_upLine1"
 disableSerialization;
 
 
-/*  Variables */
+/*  Default RLNT Debug  */
+if (rlnt_debug) then {
+  diag_log "[RLNT] The RLNT_up_main.sqf was succesfully loaded!";
+};
+
+
+/*  Variables  */
 _upSide       = _this select 0;
 _upStyle      = _this select 1;
 _upBgColor    = _this select 2;
@@ -20,7 +26,7 @@ _upDuration   = _this select 7;
 _upImg        = _this select 8;
 
 
-/*  Use config if not defined */
+/*  Use config if not defined  */
 if (isNil "_upSide") then {
   _upSide = rlnt_up_Side;
 };
@@ -60,11 +66,18 @@ if (isNil "_upImg") then {
 
 /*  Check the receiver  */
 if (_upSide == "local") then {
+  if (rlnt_up_debug) then {
+    diag_log "[RLNT] The RLNT_up_main.sqf decided a local receiver!";
+  };
+
   [_upStyle,_upBgColor,_upFontColor,_upHeader,_upLine1,_upLine2,_upDuration,_upImg] spawn RLNT_up_setup;
 };
 
 if (_upSide == "global") then {
+  if (rlnt_up_debug) then {
+    diag_log "[RLNT] The RLNT_up_main.sqf decided a local receiver!";
+  };
+
   RLNT_up_global = [_upStyle,_upBgColor,_upFontColor,_upHeader,_upLine1,_upLine2,_upDuration,_upImg];
   publicVariableServer "RLNT_up_global";
-  diag_log "array is sent to server.";
 };

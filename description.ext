@@ -27,7 +27,7 @@ class Header
 };
 
 class RscTitles {
-  #include "rlnt\dialogs\RLNT_displays.hpp"	/* RLNT - Relentless */
+  #include "rlnt\dialogs\RLNT_displays.hpp"  /*  RLNT-Additions  */
 	class wm_disp {
 		idd = -1;
 		onLoad = "uiNamespace setVariable ['wm_disp', _this select 0]";
@@ -71,4 +71,4 @@ diagHit = 1;
 #include "\z\addons\dayz_code\Configs\CfgLoot\CfgLoot.hpp"
 #include "\z\addons\dayz_code\Configs\CfgServerTrader\CfgServerTrader.hpp"
 
-#include "rlnt\dialogs\RLNT_dialogs.hpp"	/* RLNT - Relentless */
+#include "rlnt\dialogs\RLNT_dialogs.hpp"  /*  RLNT-Additions  */
