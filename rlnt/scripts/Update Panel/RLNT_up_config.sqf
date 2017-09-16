@@ -116,4 +116,4 @@ rlnt_up_Img           = "rlnt\images\picture.paa";
 ////  to help devs finding bugs in this script.         ////
 ////  DON'T EDIT IF YOU DON'T KNOW WHAT YOU ARE DOING!  ////
 ////////////////////////////////////////////////////////////
-rlnt_up_debug         = true;          /* default: false */
+rlnt_up_debug         = false;         /* default: false */

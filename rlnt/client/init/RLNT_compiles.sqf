@@ -11,7 +11,7 @@ Description:  All functions for RLNT-Additions
 ////  to help devs finding bugs in RLNT scripts.        ////
 ////  DON'T EDIT IF YOU DON'T KNOW WHAT YOU ARE DOING!  ////
 ////////////////////////////////////////////////////////////
-rlnt_debug            = true;          /* default: false */
+rlnt_debug            = false;         /* default: false */
 
 
 /*  Default RLNT Debug  */
