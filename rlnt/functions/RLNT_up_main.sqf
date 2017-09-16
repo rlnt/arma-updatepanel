@@ -75,7 +75,7 @@ if (_upSide == "local") then {
 
 if (_upSide == "global") then {
   if (rlnt_up_debug) then {
-    diag_log "[RLNT] The RLNT_up_main.sqf decided a local receiver!";
+    diag_log "[RLNT] The RLNT_up_main.sqf decided a global receiver!";
   };
 
   RLNT_up_global = [_upStyle,_upBgColor,_upFontColor,_upHeader,_upLine1,_upLine2,_upDuration,_upImg];
