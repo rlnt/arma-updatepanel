@@ -14,14 +14,14 @@
 + **@Sp4rky:** He teached me most in sqf. ([Visit him on github][sp4rkygithub])
 + **@Iben:** I got this wonderful github formatting from him. ([Visit him on github][ibengithub])
 + **@He-Man:** He made me familiar with eventHandlers and communication between client and server.
-+ **@Epoch-Discord:** Especially to @salival, @bigegg, @dirtysanchez @scubasteve. These guys on there are always helpful and very patient. Sometime I feel like I am the only one with questions. :D ([Join the Discord][epochdiscord])
++ **@Epoch-Discord:** Especially to @salival, @bigegg, @dirtysanchez @scubasteve. These guys on there are always helpful and very patient. Sometimes I feel like I am the only one with questions. :D ([Join the Discord][epochdiscord])
 
 ---
 
 ## Structure
 
 - [Features](#features)
-- [How to install on vanilla](#how-to-install)
+- [How to install](#how-to-install)
 - [How to use it](#how-to-use-it)
 - [Changelog](#changelog)
 
@@ -182,7 +182,7 @@ class RscTitles {
 ```sqf
 [Side,Style,BgColor,FontColor,Header,Line1,Line2,Duration,Img] spawn RLNT_updatePanel;
 
-*/ Here an explanation of all arguments:
+/* Here an explanation of all arguments:
   Side - has to be a String
     Can either be "local" or "global"
     "local" -> Display will only be shown to the client the display is running on
@@ -226,7 +226,7 @@ class RscTitles {
 
 | Date         | Version | Description                                                                                       |
 | :---         | :---    | :---                                                                                              |
-| [16.09.2017] | v1.0    | Initial release, [published at Epoch forum]                                                       |
+| [16.09.2017] | v1.0    | Initial release														                                                       |
 
 ---
 
