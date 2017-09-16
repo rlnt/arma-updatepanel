@@ -14,6 +14,7 @@
 + **@Sp4rky:** He teached me most in sqf. ([Visit him on github][sp4rkygithub])
 + **@Iben:** I got this wonderful github formatting from him. ([Visit him on github][ibengithub])
 + **@He-Man:** He made me familiar with eventHandlers and communication between client and server.
++ **@LordGolias:** He made an amazing sqf-linter for the Atom-Editor. ([Visit him on github][goliasgithub])
 + **@Epoch-Discord:** Especially to @salival, @bigegg, @dirtysanchez @scubasteve. These guys on there are always helpful and very patient. Sometimes I feel like I am the only one with questions. :D ([Join the Discord][epochdiscord])
 
 ---
@@ -230,7 +231,8 @@ class RscTitles {
 
 ---
 
-[rlnt_up_epochforum]: https://epochmod.com/forum/ "Go to source"
+[rlnt_up_epochforum]: https://epochmod.com/forum/topic/44485-release-custom-update-panel-16092017-10/ "Go to source"
 [sp4rkygithub]: https://github.com/SPKcoding/ "Go to source"
 [ibengithub]: https://github.com/infobeny/ "Go to source"
+[goliasgithub]: https://github.com/LordGolias/ "Go to source"
 [epochdiscord]: https://discord.gg/0k4ynDDCsnMzkxk7 "Go to source"
