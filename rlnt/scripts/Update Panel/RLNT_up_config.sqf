@@ -5,6 +5,34 @@ Description:  Config for RLNT-CustomUpdatePanel
 */
 
 
+/*
+Explanation of this function:
+I never liked the vanilla notification functions that were
+implemented by Bohemia by default, so I decided to create a
+new function. With it, you are able to create a display
+with different styles and other changable elements like the
+colors, the image, the receiver, the duration and more.
+People like Scripters and Devs can also make a use of it
+by implementing it into their scripts to have a new way
+of displaying notifications. No more ugly Hint boxes or
+format texts. Read more on the Epoch-Forum-Thread:
+
+*/
+
+/*
+Explanation of the config:
+In this config, you can set dafault variables. That means
+whenever you replace an argument in the spawn command of the
+function by nil, it will be replaced by the variable that's
+set in this config. That's useful if you use this function
+as default notification system on your server. Let's say
+you always want a green background for all messages on your
+server, then you can just set this here and when you spawn
+the function, you just replace the argument for the BgColor
+with nil.
+*/
+
+
 /*  Default RLNT Debug - DON'T TOUCH THIS  */
 if (rlnt_debug) then {
   diag_log "[RLNT] The Costum Update Panel Config was succesfully loaded!";
