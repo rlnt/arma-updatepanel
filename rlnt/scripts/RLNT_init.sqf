@@ -7,7 +7,7 @@ Description:  Init for all RLNT-Relentless Additions
 
 /*  Default RLNT Debug  */
 if (rlnt_debug) then {
-  diag_log "[RLNT] The RLNT_init.sqf was succesfully loaded!";
+  diag_log "[RLNT][MAIN] The RLNT_init.sqf was succesfully loaded!";
 };
 
 

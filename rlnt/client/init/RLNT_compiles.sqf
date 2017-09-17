@@ -16,14 +16,14 @@ rlnt_debug            = false;         /* default: false */
 
 /*  Default RLNT Debug  */
 if (rlnt_debug) then {
-  diag_log "[RLNT] The RLNT_compiles.sqf was succesfully loaded!";
+  diag_log "[RLNT][MAIN] The RLNT_compiles.sqf was succesfully loaded!";
 };
 
 
 /*  Server Sided  */
 if (isServer) then {
 	if (rlnt_debug) then {
-		diag_log "[RLNT] Server-sided compiles are loading...";
+		diag_log "[RLNT][MAIN] Server-sided compiles are loading...";
 	};
 };
 
@@ -31,14 +31,14 @@ if (isServer) then {
 /*  Client Sided  */
 if (!isDedicated) then {
 	if (rlnt_debug) then {
-		diag_log "[RLNT] Client-sided compiles are loading...";
+		diag_log "[RLNT][MAIN] Client-sided compiles are loading...";
 	};
 };
 
 
 /*  Both  */
 if (rlnt_debug) then {
-	diag_log "[RLNT] Compiles are loading...";
+	diag_log "[RLNT][MAIN] Compiles are loading...";
 };
 
 	//Custom Update Panel

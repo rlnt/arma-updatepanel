@@ -43,7 +43,7 @@ class rlnt_updatepanel_style_1 {
 		{
 			idc = 1028;
 			colorText[] = {1,1,1,1};
-			text = "RLNT Updatepanel:";
+			text = "";
 			x = 0.0196003 * safezoneW + safezoneX;
 			y = 0.0359712 * safezoneH + safezoneY;
 			w = 0.0670085 * safezoneW;
@@ -54,7 +54,7 @@ class rlnt_updatepanel_style_1 {
 		{
 			idc = 1029;
 			colorText[] = {1,1,1,1};
-			text = "The player menu has been updated!";
+			text = "";
 			x = 0.0206312 * safezoneW + safezoneX;
 			y = 0.0733574 * safezoneH + safezoneY;
 			w = 0.165975 * safezoneW;
@@ -64,7 +64,7 @@ class rlnt_updatepanel_style_1 {
 		{
 			idc = 1030;
 			colorText[] = {1,1,1,1};
-			text = "The player menu has been updated!";
+			text = "";
 			x = 0.0206312 * safezoneW + safezoneX;
 			y = 0.0975486 * safezoneH + safezoneY;
 			w = 0.165975 * safezoneW;
@@ -110,7 +110,7 @@ class rlnt_updatepanel_style_2 {
 		class rlnt_text_header: RLNT_RscText
 		{
 			idc = 1028;
-			text = "RLNT Updatepanel:";
+			text = "";
 			x = 0.0196003 * safezoneW + safezoneX;
 			y = 0.0359712 * safezoneH + safezoneY;
 			w = 0.0670085 * safezoneW;
@@ -120,7 +120,7 @@ class rlnt_updatepanel_style_2 {
 		class rlnt_text_line_1: RLNT_RscText
 		{
 			idc = 1029;
-			text = "The player menu has been updated!";
+			text = "";
 			x = 0.0206312 * safezoneW + safezoneX;
 			y = 0.0733574 * safezoneH + safezoneY;
 			w = 0.165975 * safezoneW;
@@ -129,7 +129,7 @@ class rlnt_updatepanel_style_2 {
 		class rlnt_text_line_2: RLNT_RscText
 		{
 			idc = 1030;
-			text = "The player menu has been updated!";
+			text = "";
 			x = 0.0206312 * safezoneW + safezoneX;
 			y = 0.0975486 * safezoneH + safezoneY;
 			w = 0.165975 * safezoneW;

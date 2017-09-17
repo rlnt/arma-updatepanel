@@ -35,7 +35,7 @@ with nil.
 
 /*  Default RLNT Debug - DON'T TOUCH THIS  */
 if (rlnt_debug) then {
-  diag_log "[RLNT] The Costum Update Panel Config was succesfully loaded!";
+  diag_log "[RLNT][MAIN] The Costum Update Panel Config was succesfully loaded!";
 };
 
 

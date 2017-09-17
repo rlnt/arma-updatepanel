@@ -10,7 +10,7 @@ disableSerialization;
 
 /*  Default RLNT Debug  */
 if (rlnt_debug) then {
-  diag_log "[RLNT] The RLNT_up_setup.sqf was succesfully loaded!";
+  diag_log "[RLNT][MAIN] The RLNT_up_setup.sqf was succesfully loaded!";
 };
 
 
@@ -34,7 +34,7 @@ switch (_upStyle) do {
     sleep 0.01;
 
     if (rlnt_up_debug) then {
-      diag_log "[RLNT] The RLNT_up_setup.sqf decided style 1!";
+      diag_log "[RLNT][UP] The RLNT_up_setup.sqf decided style 1!";
     };
 
     _display    = uiNamespace getVariable["rlnt_updatepanel_style_1", displayNull];
@@ -61,7 +61,7 @@ switch (_upStyle) do {
     sleep 0.01;
 
     if (rlnt_up_debug) then {
-      diag_log "[RLNT] The RLNT_up_setup.sqf decided style 2!";
+      diag_log "[RLNT][UP] The RLNT_up_setup.sqf decided style 2!";
     };
 
     _display    = uiNamespace getVariable["rlnt_updatepanel_style_2", displayNull];
