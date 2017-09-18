@@ -2,9 +2,9 @@
 Filename:     RLNT_up_setup.sqf
 Author:       Relentless
 Description:  Creation function for RLNT-CustomUpdatePanel
-Call:         [_upStyle,_upBgColor,_upFontColor,_upHeader,_upLine1,_upLine2,_upDuration,_upImg] spawn RLNT_up_setup;
+Call:         [_upStyle,_upHeader,_upLine1,_upLine2,_upImg,_upDuration,_upFontColor,_upBgColor] spawn RLNT_up_setup;
 */
-private ["_upStyle","_upBgColor","_upFontColor","_upHeader","_upLine1","_upLine2","_upDuration","_upImg","_layer","_display","_cBgColor","_cFontColor","_cHeader","_cLine1","_cLine2","_cImg"];
+private ["_upStyle","_upHeader","_upLine1","_upLine2","_upImg","_upDuration","_upFontColor","_upBgColor","_layer","_display","_cHeader","_cLine1","_cLine2","_cImg","_cFontColor","_cBgColor"];
 disableSerialization;
 
 
@@ -16,13 +16,13 @@ if (rlnt_debug) then {
 
 /*  Variables  */
 _upStyle      = _this select 0;
-_upBgColor    = _this select 1;
-_upFontColor  = _this select 2;
-_upHeader     = _this select 3;
-_upLine1      = _this select 4;
-_upLine2      = _this select 5;
-_upDuration   = _this select 6;
-_upImg        = _this select 7;
+_upHeader     = _this select 1;
+_upLine1      = _this select 2;
+_upLine2      = _this select 3;
+_upImg        = _this select 4;
+_upDuration   = _this select 5;
+_upFontColor  = _this select 6;
+_upBgColor    = _this select 7;
 _layer        = 1302;
 
 
