@@ -3,8 +3,8 @@
 
 ---
 
-[Go to Epoch forum thread][rlnt_up_epochforum]
-[Report issues/bugs][githubissues]
+[Go to Epoch forum thread][rlnt_up_epochforum]<br>
+[Report issues/bugs][githubissues]<br>
 [Suggest new features][githubsuggestions]
 
 ---
@@ -189,8 +189,8 @@ class RscTitles {
 <a name="battleye"></a>
 ## Battleye
 
++ Add an execption to publicvariable.txt
 ```sqf
-//Add an exception to publicvariable.txt
 !="RLNT_up_client"
 ```
 
@@ -223,9 +223,9 @@ rlnt_updatepanel_style_1,rlnt_updatepanel_style_2,rlnt_updatepanel_style_3,rlnt_
     "local" -> Display will only be shown to the client the display is running on
     "global" -> Display will be shown to ALL clients on the server (global message)
 
-  Style - has to be an Integer
+	Style - has to be an Integer
     Possible values: 1 or 2 (if you want more styles, suggest them on the Forum)
-		For example images, check out the [Epoch-Forum-Topic][rlnt_up_epochforum]
+		For example images, check out the Epoch-Forum-Topic
     1 -> A display in the left upper corner with a header and 2 lines of text
     2 -> Same as 1 but it's plain text with no background
 		3 -> A display in the left upper corner with a header, 2 lines of text and an image
@@ -266,7 +266,7 @@ rlnt_updatepanel_style_1,rlnt_updatepanel_style_2,rlnt_updatepanel_style_3,rlnt_
 | :---         | :---    | :---                                                                                              |
 | [16.09.2017] | v1.0    | Initial release																																									 |
 | [17.09.2017] | v1.1		 | Minor adjustments to fix known problems and structure<br>_Changes:_ [[commit dbef01d][update1]]	 |
-| [18.09.2017] | v1.2		 | Added two new styles, added links to config<br>_Changes:_ [[commit ][update2]]										 |
+| [18.09.2017] | v1.2		 | Added two new styles, added links to config<br>_Changes:_ [[commit 0248494][update2]]										 |
 
 ---
 
@@ -278,3 +278,4 @@ rlnt_updatepanel_style_1,rlnt_updatepanel_style_2,rlnt_updatepanel_style_3,rlnt_
 [goliasgithub]: https://github.com/LordGolias/ "Go to source"
 [epochdiscord]: https://discord.gg/0k4ynDDCsnMzkxk7 "Go to source"
 [update1]: https://github.com/DAmNRelentless/CustomUpdatePanel/commit/dbef01d0ec8ff592ee0bbeb4cd6db5bb7a01d613 "Go to source"
+[update2]: https://github.com/DAmNRelentless/CustomUpdatePanel/commit/024849451658bb906a625a9ae7ade9109076b071 "Go to source"
