@@ -1,11 +1,11 @@
 # Custom Update Panel
-**For DayZ Epoch 1.0.6.1+**<br>_Last update: [18.09.2017]_<br>_v1.2_ ([Changelog](#changelog))
+**For DayZ Epoch 1.0.6.1+**<br>_Last update: [19.09.2017]_<br>_v1.3_ ([Changelog](#changelog))
 
 ---
 
 [Go to Epoch forum thread][rlnt_up_epochforum]<br>
-[Report issues/bugs][githubissues]<br>
-[Suggest new features][githubsuggestions]
+[Report issues/bugs/problems][githubissues]<br>
+[Suggest features/ideas][githubsuggestions]
 
 ---
 
@@ -41,6 +41,7 @@
 + If you often use the same display, you can setup default variables in a config file.
 + Different styles (like with and without image), you can suggest more in the forum thread.
 + Can be used as general notification method on your server and potentially replace legacy notification methods like hint boxes or format texts.
++ All arguments are optional now, means if you leave them out, it will take them from config.
 
 ---
 
@@ -213,60 +214,99 @@ rlnt_updatepanel_style_1,rlnt_updatepanel_style_2,rlnt_updatepanel_style_3,rlnt_
 <a name="how-to-use-it"></a>
 ## How to use it
 
-+ **This function will only do something when it's spawned by this line:**
+**This is a function, that means it needs to be executed to do anything!**
++ To execute this function, you need this command:
 ```sqf
-[Side,Style,BgColor,FontColor,Header,Line1,Line2,Duration,Img] spawn RLNT_updatePanel;
-
-/* Here an explanation of all arguments:
-  Side - has to be a String
-    Can either be "local" or "global"
-    "local" -> Display will only be shown to the client the display is running on
-    "global" -> Display will be shown to ALL clients on the server (global message)
-
-	Style - has to be an Integer
-    Possible values: 1 or 2 (if you want more styles, suggest them on the Forum)
-		For example images, check out the Epoch-Forum-Topic
-    1 -> A display in the left upper corner with a header and 2 lines of text
-    2 -> Same as 1 but it's plain text with no background
-		3 -> A display in the left upper corner with a header, 2 lines of text and an image
-		4 -> Same as 3 but it's plain text with no background
-
-  BgColor - Background Color - has to be a color array
-    Example: [1,1,1,1]
-    Format: [r,g,b,alpha] [red,green,blue,alpha]
-
-  FontColor - Text Color - has to be a color array
-    Example: [1,1,1,1]
-    Format: [r,g,b,alpha] [red,green,blue,alpha]
-
-  Header - headline of the display - has to be a String
-    Example: "Headline 1"
-
-  Line 1 - first text line of the display - has to be a String
-    Example: "This is my first line."
-
-  Line 2 - second text line of the display - has to be a String
-    Example: "This is my second line."
-
-  Duration - time in seconds for the display - has to be an Integer
-    Example: 5
-
-  Img - image that will be displayed - has to be a path String
-    Example: "images\display\image.paa"
-*/
+[Side,Style,Header,Line1,Line2,Img,Duration,FontColor,BgColor] spawn RLNT_updatePanel;
 ```
-+ **Variables replaced with nil** will be taken from config
+**Here an explanation of all the arguments:**
+1. Argument: Side aka Receiver
++ Has to be a **String**!
++ Is optional - can be empty - will be replaced by config
++ Can be auto-replaced by config with input nil
++ Two possibilities: "local" or "global"
++ local -> Panel will only be displayed to the client it's running on
++ global -> Panel will be displayed to **ALL** clients on the server (global message)
+
+2. Argument: Style aka Design
++ Has to be an **Integer**!
++ Is optional - can be empty - will be replaced by config
++ Can be auto-replaced by config with input nil
++ Possibilities: 1-4 (if you want more suggest them here: [Epoch Forum][rlnt_up_epochforum])
++ 1 -> A panel with header and two lines of text in the left upper corner ([example image][imagestyle1])
++ 2 -> Just a header with two lines of text floating in the left upper corner ([example image][imagestyle2])
++ 3 -> A panel with image, header and two lines of text in the left upper corner ([example image][imagestyle3])
++ 4 -> Just an image, header and two lines of text floating in the left upper corner ([example image][imagestyle4])
+
+3. Argument: Header aka Headline of the Panel
++ Has to be a **String**!
++ Is optional - can be empty - will be replaced by config
++ Can be auto-replaced by config with input nil
++ Has larger text size than the both text lines
++ Maximum characters: 16
+
+4. Argument: Line1 aka First textline of the panel
++ Has to be a **String**!
++ Is optional - can be empty - will be replaced by config
++ Can be auto-replaced by config with input nil
++ Maximum characters: 40
+
+5. Argument: Line2 aka Second textline of the panel
++ Has to be a **String**!
++ Is optional - can be empty - will be replaced by config
++ Can be auto-replaced by config with input nil
++ Maximum characters: 40
+
+6. Argument: Img aka Image or Picture
++ Has to be a **Path-String**!
++ Is optional - can be empty - will be replaced by config
++ Can be auto-replaced by config with input nil
++ Has to be a .paa - file
++ Suggested resolution: 340x300
+
+7. Argument: Duration aka time how long the panel is displayed
++ Has to be an **Integer**!
++ Is optional - can be empty - will be replaced by config
++ Can be auto-replaced by config with input nil
++ Has to be between 3 and 60
++ Always lasts 1 second longer because it fades in
++ Doesn't matter when another update panel pops up
+
+8. Argument: FontColor aka Color of the text
++ Has to be a **Color-Array**!
++ Is optional - can be empty - will be replaced by config
++ Can be auto-replaced by config with input nil
++ Color can be chosen here as HTML: [Color Picker][htmlcolor]
++ HTML color can be converted here: [Color Converter][colorconverter]
++ Format is [red,green,blue,alpha] aka [r,g,b,a]
++ I always suggest alpha = 1
+
+9. Argument: BgColor aka Color of the background
++ Has to be a **Color-Array**!
++ Is optional - can be empty - will be replaced by config
++ Can be auto-replaced by config with input nil
++ Color can be chosen here as HTML: [Color Picker][htmlcolor]
++ HTML color can be converted here: [Color Converter][colorconverter]
++ Format is [red,green,blue,alpha] aka [r,g,b,a]
++ I always suggest alpha = 0.7
+
+**Due to the fact that all arguments are optional you can also execute like this:**
+Keep in mind if you do that, it will take all the arguments from your config!
+```sqf
+[] spawn RLNT_updatePanel;
+```
 
 ---
 
 <a name="changelog"></a>
 ## Changelog
 
-| Date         | Version | Description                                                                                       |
-| :---         | :---    | :---                                                                                              |
-| [16.09.2017] | v1.0    | Initial release																																									 |
-| [17.09.2017] | v1.1		 | Minor adjustments to fix known problems and structure<br>_Changes:_ [[commit dbef01d][update1]]	 |
-| [18.09.2017] | v1.2		 | Added two new styles, added links to config<br>_Changes:_ [[commit 0248494][update2]]										 |
+| Date         | Version | Description                                                                                       												 				|
+| :---         | :---    | :---                                                                                              												 				|
+| [16.09.2017] | v1.0    | Initial release																																									 												 				|
+| [17.09.2017] | v1.1		 | Minor adjustments to fix known problems and structure<br>_Changes:_ [[commit dbef01d][update1]]	 												 				|
+| [18.09.2017] | v1.2		 | Added two new styles, added links to config<br>_Changes:_ [[commit 0248494][update2]]						 												 				|
+| [19.09.2017] | v1.3		 | Made all arguments optional, added new pubVar-finding alghorithm, adjusted Readme<br>_Changes:_ [[commit acaff6a][update3]]			|
 
 ---
 
@@ -277,5 +317,12 @@ rlnt_updatepanel_style_1,rlnt_updatepanel_style_2,rlnt_updatepanel_style_3,rlnt_
 [ibengithub]: https://github.com/infobeny/ "Go to source"
 [goliasgithub]: https://github.com/LordGolias/ "Go to source"
 [epochdiscord]: https://discord.gg/0k4ynDDCsnMzkxk7 "Go to source"
+[htmlcolor]: https://www.w3schools.com/colors/colors_picker.asp "Go to source"
+[colorconverter]: http://killzonekid.com/hex-2-arma-gui-colour-converter/ "Go to source"
+[imagestyle1]: https://i.imgur.com/Woxzfe4.png "Go to source"
+[imagestyle2]: https://i.imgur.com/1XWcirz.png "Go to source"
+[imagestyle3]: https://i.imgur.com/PxxW6Lm.png "Go to source"
+[imagestyle4]: https://i.imgur.com/yVrZRJR.png "Go to source"
 [update1]: https://github.com/DAmNRelentless/CustomUpdatePanel/commit/dbef01d0ec8ff592ee0bbeb4cd6db5bb7a01d613 "Go to source"
 [update2]: https://github.com/DAmNRelentless/CustomUpdatePanel/commit/024849451658bb906a625a9ae7ade9109076b071 "Go to source"
+[update3]: https://github.com/DAmNRelentless/CustomUpdatePanel/commit/acaff6a224581c34e64fcae004f0991b07fc1d95 "Go to source"

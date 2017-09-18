@@ -16,7 +16,7 @@ People like Scripters and Devs can also make a use of it
 by implementing it into their scripts to have a new way
 of displaying notifications. No more ugly Hint boxes or
 format texts. Read more on the Epoch-Forum-Thread:
-https://epochmod.com/forum/topic/44485-release-custom-update-panel-16092017-10/
+http://bit.ly/2xstFdx
 */
 
 /*
@@ -24,7 +24,9 @@ Explanation of the config:
 In this config, you can set dafault variables. That means
 whenever you replace an argument in the spawn command of the
 function by nil, it will be replaced by the variable that's
-set in this config. That's useful if you use this function
+set in this config. Also all the arguments are optional, means
+if you leave them out, they also will be replaced by these
+config variables. That's useful if you use this function
 as default notification system on your server. Let's say
 you always want a green background for all messages on your
 server, then you can just set this here and when you spawn
@@ -70,30 +72,6 @@ rlnt_up_Side          = "local";       /* default: "local" */
 rlnt_up_Style         = 1;             /* default: 1 */
 
 ////////////////////////////////////////////////////////////
-////  Background-Color-Option:                          ////
-////  Default color-array that defines what color the   ////
-////  background of the Update Panel has.               ////
-////  THE OPTION HAS TO BE AN ARRAY!                    ////
-////  The format is [r,g,b,alpha]                       ////
-////  I would always suggest an alpha value of 0.7.     ////
-////  You can use this site to find a fitting color:    ////
-////  http://bit.ly/2f543cr                             ////
-////////////////////////////////////////////////////////////
-rlnt_up_BgColor       = [0,0.2,0,0.7]; /* default: [0,0.2,0,0.7] */
-
-////////////////////////////////////////////////////////////
-////  Text-Color-Option:                                ////
-////  Default color-array that defines what color the   ////
-////  text of the Update Panel has.                     ////
-////  THE OPTION HAS TO BE AN ARRAY!                    ////
-////  The format is [r,g,b,alpha]                       ////
-////  I would always suggest an alpha value of 1.       ////
-////  You can use this site to find a fitting color:    ////
-////  http://bit.ly/2f543cr                             ////
-////////////////////////////////////////////////////////////
-rlnt_up_FontColor     = [1,1,1,1];     /* default: [1,1,1,1] */
-
-////////////////////////////////////////////////////////////
 ////  Header-Text-Option:                               ////
 ////  Default string that defines the text that's used  ////
 ////  as the header of the Update Panel.                ////
@@ -121,6 +99,16 @@ rlnt_up_Line1         = "Here could be your advertisement!";
 rlnt_up_Line2         = "Here could be your advertisement!";
 
 ////////////////////////////////////////////////////////////
+////  Image-Option:                                     ////
+////  Default string that defines the path to the       ////
+////  image that will be displayed in the Update Panel. ////
+////  THE OPTION HAS TO BE A STRING WITH A VALID PATH!  ////
+////  I would always suggest a resolution of 340x300.   ////
+////  The image has to be in .paa format.               ////
+////////////////////////////////////////////////////////////
+rlnt_up_Img           = "rlnt\images\picture.paa";
+
+////////////////////////////////////////////////////////////
 ////  Duration-Option:                                  ////
 ////  Default value that defines the duration on how    ////
 ////  long the Update Panel is visible.                 ////
@@ -133,14 +121,28 @@ rlnt_up_Line2         = "Here could be your advertisement!";
 rlnt_up_Duration      = 5;             /*  default: 5  */
 
 ////////////////////////////////////////////////////////////
-////  Image-Option:                                     ////
-////  Default string that defines the path to the       ////
-////  image that will be displayed in the Update Panel. ////
-////  THE OPTION HAS TO BE A STRING WITH A VALID PATH!  ////
-////  I would always suggest a resolution of 340x300.   ////
-////  The image has to be in .paa format.               ////
+////  Text-Color-Option:                                ////
+////  Default color-array that defines what color the   ////
+////  text of the Update Panel has.                     ////
+////  THE OPTION HAS TO BE AN ARRAY!                    ////
+////  The format is [r,g,b,alpha]                       ////
+////  I would always suggest an alpha value of 1.       ////
+////  You can use this site to find a fitting color:    ////
+////  http://bit.ly/2f543cr                             ////
 ////////////////////////////////////////////////////////////
-rlnt_up_Img           = "rlnt\images\picture.paa";
+rlnt_up_FontColor     = [1,1,1,1];     /* default: [1,1,1,1] */
+
+////////////////////////////////////////////////////////////
+////  Background-Color-Option:                          ////
+////  Default color-array that defines what color the   ////
+////  background of the Update Panel has.               ////
+////  THE OPTION HAS TO BE AN ARRAY!                    ////
+////  The format is [r,g,b,alpha]                       ////
+////  I would always suggest an alpha value of 0.7.     ////
+////  You can use this site to find a fitting color:    ////
+////  http://bit.ly/2f543cr                             ////
+////////////////////////////////////////////////////////////
+rlnt_up_BgColor       = [0,0.2,0,0.7]; /* default: [0,0.2,0,0.7] */
 
 ////////////////////////////////////////////////////////////
 ////  Developer-Options:                                ////
