@@ -16,7 +16,7 @@ People like Scripters and Devs can also make a use of it
 by implementing it into their scripts to have a new way
 of displaying notifications. No more ugly Hint boxes or
 format texts. Read more on the Epoch-Forum-Thread:
-
+https://epochmod.com/forum/topic/44485-release-custom-update-panel-16092017-10/
 */
 
 /*
@@ -54,14 +54,18 @@ rlnt_up_Side          = "local";       /* default: "local" */
 ////  Style-Option:                                     ////
 ////  Default value that defines in what style the      ////
 ////  Update Panel is displayed.                        ////
-////  Possible Options: 1 or 2                          ////
-////  1 - Panel in the left upper corner                ////
-////  Example image:                                    ////
-////  2 - Panel with image in the left upper corner     ////
-////  Example image:                                    ////
+////  Possible Options: 1 to 4                          ////
+////  1 - Left upper corner without image               ////
+////  Example image: https://i.imgur.com/Woxzfe4.png    ////
+////  2 - Left upper corner without image (PLAIN)       ////
+////  Example image: https://i.imgur.com/1XWcirz.png    ////
+////  3 - Left upper corner with image                  ////
+////  Example image: https://i.imgur.com/PxxW6Lm.png    ////
+////  4 - Left upper corner with image (PLAIN)          ////
+////  Example image: https://i.imgur.com/yVrZRJR.png    ////
 ////  THE OPTION HAS TO BE AN INTEGER!                  ////
 ////  If you want more styles, suggest them in this     ////
-////  topic:                                            ////
+////  topic: http://bit.ly/2xstFdx                      ////
 ////////////////////////////////////////////////////////////
 rlnt_up_Style         = 1;             /* default: 1 */
 
@@ -73,7 +77,7 @@ rlnt_up_Style         = 1;             /* default: 1 */
 ////  The format is [r,g,b,alpha]                       ////
 ////  I would always suggest an alpha value of 0.7.     ////
 ////  You can use this site to find a fitting color:    ////
-////                                                    ////
+////  http://bit.ly/2f543cr                             ////
 ////////////////////////////////////////////////////////////
 rlnt_up_BgColor       = [0,0.2,0,0.7]; /* default: [0,0.2,0,0.7] */
 
@@ -85,7 +89,7 @@ rlnt_up_BgColor       = [0,0.2,0,0.7]; /* default: [0,0.2,0,0.7] */
 ////  The format is [r,g,b,alpha]                       ////
 ////  I would always suggest an alpha value of 1.       ////
 ////  You can use this site to find a fitting color:    ////
-////                                                    ////
+////  http://bit.ly/2f543cr                             ////
 ////////////////////////////////////////////////////////////
 rlnt_up_FontColor     = [1,1,1,1];     /* default: [1,1,1,1] */
 

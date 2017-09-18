@@ -1,9 +1,11 @@
 # Custom Update Panel
-**For DayZ Epoch 1.0.6.1+**<br>_Last update: [16.09.2017], v1.0_
+**For DayZ Epoch 1.0.6.1+**<br>_Last update: [18.09.2017]_<br>_v1.2_ ([Changelog](#changelog))
 
 ---
 
 [Go to Epoch forum thread][rlnt_up_epochforum]
+[Report issues/bugs][githubissues]
+[Suggest new features][githubsuggestions]
 
 ---
 
@@ -23,6 +25,8 @@
 
 - [Features](#features)
 - [How to install](#how-to-install)
+- [Battleye](#battleye)
+- [InfiStar](#infistar)
 - [How to use it](#how-to-use-it)
 - [Changelog](#changelog)
 
@@ -45,6 +49,8 @@
 
 It's pretty easy. Make sure to follow the instructions carefully in case you have already edited files!
 
+---
+
 1. First Step:
 + Download all files from GitHub, either by cloning it or by downloading the zip.
 
@@ -64,7 +70,11 @@ server_sendToClient = compile preprocessFileLineNumbers "\z\addons\dayz_server\e
 compile preprocessFileLineNumbers "\z\addons\dayz_server\eventHandlers\RLNT_eventHandlers.sqf";  /*  RLNT-Additions  */
 ```
 
+---
+
 Congratulations, you managed the server-sided installation part! Let's continue with the client-sided instructions.
+
+---
 
 4. Fourth Step:
 + Move the "dayz_code" folder **from the downloaded folder** into your mission root directory (where init.sqf is located).
@@ -176,6 +186,30 @@ class RscTitles {
 
 ---
 
+<a name="battleye"></a>
+## Battleye
+
+```sqf
+//Add an exception to publicvariable.txt
+!="RLNT_up_client"
+```
+
+---
+
+<a name="infistar"></a>
+## InfiStar
+
++ Add these exceptions to your allowed dialogs:
+```sqf
+7207,7208,7209,7210
+```
++ Add these exceptions to your allowed cMenus:
+```sqf
+rlnt_updatepanel_style_1,rlnt_updatepanel_style_2,rlnt_updatepanel_style_3,rlnt_updatepanel_style_4
+```
+
+---
+
 <a name="how-to-use-it"></a>
 ## How to use it
 
@@ -191,8 +225,11 @@ class RscTitles {
 
   Style - has to be an Integer
     Possible values: 1 or 2 (if you want more styles, suggest them on the Forum)
+		For example images, check out the [Epoch-Forum-Topic][rlnt_up_epochforum]
     1 -> A display in the left upper corner with a header and 2 lines of text
-    2 -> Same as 1 but with an additional image
+    2 -> Same as 1 but it's plain text with no background
+		3 -> A display in the left upper corner with a header, 2 lines of text and an image
+		4 -> Same as 3 but it's plain text with no background
 
   BgColor - Background Color - has to be a color array
     Example: [1,1,1,1]
@@ -227,12 +264,17 @@ class RscTitles {
 
 | Date         | Version | Description                                                                                       |
 | :---         | :---    | :---                                                                                              |
-| [16.09.2017] | v1.0    | Initial release														                                                       |
+| [16.09.2017] | v1.0    | Initial release																																									 |
+| [17.09.2017] | v1.1		 | Minor adjustments to fix known problems and structure<br>_Changes:_ [[commit dbef01d][update1]]	 |
+| [18.09.2017] | v1.2		 | Added two new styles, added links to config<br>_Changes:_ [[commit ][update2]]										 |
 
 ---
 
 [rlnt_up_epochforum]: https://epochmod.com/forum/topic/44485-release-custom-update-panel-16092017-10/ "Go to source"
+[githubissues]: https://github.com/DAmNRelentless/CustomUpdatePanel/issues/1 "Go to source"
+[githubsuggestions]: https://github.com/DAmNRelentless/CustomUpdatePanel/issues/2 "Go to source"
 [sp4rkygithub]: https://github.com/SPKcoding/ "Go to source"
 [ibengithub]: https://github.com/infobeny/ "Go to source"
 [goliasgithub]: https://github.com/LordGolias/ "Go to source"
 [epochdiscord]: https://discord.gg/0k4ynDDCsnMzkxk7 "Go to source"
+[update1]: https://github.com/DAmNRelentless/CustomUpdatePanel/commit/dbef01d0ec8ff592ee0bbeb4cd6db5bb7a01d613 "Go to source"
