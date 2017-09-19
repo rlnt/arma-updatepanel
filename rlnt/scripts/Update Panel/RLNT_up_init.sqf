@@ -1,7 +1,7 @@
 /*
 Filename:     RLNT_up_init.sqf
 Author:       Relentless
-Description:  Init for RLNT-CustomUpdatePanel
+Description:  Init for Update Panel
 */
 
 

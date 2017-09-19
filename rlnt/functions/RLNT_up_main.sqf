@@ -1,7 +1,7 @@
 /*
 Filename:     RLNT_up_main.sqf
 Author:       Relentless
-Description:  Base function for RLNT-CustomUpdatePanel
+Description:  Base function for Update Panel
 Call:         [Side,Style,Header,Line1,Line2,Img,Duration,FontColor,BgColor] spawn RLNT_updatePanel;
 */
 private ["_input","_varArray"];

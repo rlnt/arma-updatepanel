@@ -1,7 +1,7 @@
 /*
 Filename:     RLNT_up_setup.sqf
 Author:       Relentless
-Description:  Creation function for RLNT-CustomUpdatePanel
+Description:  Creation function for Update Panel
 Call:         _varArray spawn RLNT_up_setup;
 */
 private ["_upStyle","_upHeader","_upLine1","_upLine2","_upImg","_upDuration","_upFontColor","_upBgColor","_layer","_display","_cHeader","_cLine1","_cLine2","_cImg","_cFontColor","_cBgColor"];

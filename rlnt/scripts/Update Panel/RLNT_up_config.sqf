@@ -1,7 +1,7 @@
 /*
 Filename:     RLNT_up_config.sqf
 Author:       Relentless
-Description:  Config for RLNT-CustomUpdatePanel
+Description:  Config for Update Panel
 */
 
 

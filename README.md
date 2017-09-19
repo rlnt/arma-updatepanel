@@ -1,4 +1,4 @@
-# Custom Update Panel
+# RLNT Update Panel
 **For DayZ Epoch 1.0.6.1+**<br>_Last update: [19.09.2017]_<br>_v1.3_ ([Changelog](#changelog))
 
 ---
@@ -314,9 +314,9 @@ Keep in mind if you do that, it will take all the arguments from your config!
 ---
 
 [rlnt_up_epochforum]: https://epochmod.com/forum/topic/44485-release-custom-update-panel-16092017-10/ "Go to source"
-[githubissues]: https://github.com/DAmNRelentless/CustomUpdatePanel/issues/1 "Go to source"
-[githubsuggestions]: https://github.com/DAmNRelentless/CustomUpdatePanel/issues/2 "Go to source"
-[githubreleases]: https://github.com/DAmNRelentless/CustomUpdatePanel/releases "Go to source"
+[githubissues]: https://github.com/DAmNRelentless/RLNTUpdatePanel/issues/1 "Go to source"
+[githubsuggestions]: https://github.com/DAmNRelentless/RLNTUpdatePanel/issues/2 "Go to source"
+[githubreleases]: https://github.com/DAmNRelentless/RLNTUpdatePanel/releases "Go to source"
 [sp4rkygithub]: https://github.com/SPKcoding/ "Go to source"
 [ibengithub]: https://github.com/infobeny/ "Go to source"
 [goliasgithub]: https://github.com/LordGolias/ "Go to source"
@@ -328,7 +328,7 @@ Keep in mind if you do that, it will take all the arguments from your config!
 [imagestyle2]: https://i.imgur.com/1XWcirz.png "Go to source"
 [imagestyle3]: https://i.imgur.com/PxxW6Lm.png "Go to source"
 [imagestyle4]: https://i.imgur.com/yVrZRJR.png "Go to source"
-[update1]: https://github.com/DAmNRelentless/CustomUpdatePanel/commit/dbef01d0ec8ff592ee0bbeb4cd6db5bb7a01d613 "Go to source"
-[update2]: https://github.com/DAmNRelentless/CustomUpdatePanel/commit/024849451658bb906a625a9ae7ade9109076b071 "Go to source"
-[update3]: https://github.com/DAmNRelentless/CustomUpdatePanel/commit/acaff6a224581c34e64fcae004f0991b07fc1d95 "Go to source"
-[update4]: https://github.com/DAmNRelentless/CustomUpdatePanel/commit/d724d34c3173ccf95dd6dddfdae0ec9e48a28f6b "Go to source"
+[update1]: https://github.com/DAmNRelentless/RLNTUpdatePanel/commit/dbef01d0ec8ff592ee0bbeb4cd6db5bb7a01d613 "Go to source"
+[update2]: https://github.com/DAmNRelentless/RLNTUpdatePanel/commit/024849451658bb906a625a9ae7ade9109076b071 "Go to source"
+[update3]: https://github.com/DAmNRelentless/RLNTUpdatePanel/commit/acaff6a224581c34e64fcae004f0991b07fc1d95 "Go to source"
+[update4]: https://github.com/DAmNRelentless/RLNTUpdatePanel/commit/d724d34c3173ccf95dd6dddfdae0ec9e48a28f6b "Go to source"

@@ -1,7 +1,7 @@
 /*
 Filename:     RLNT_init.sqf
 Author:       Relentless
-Description:  Init for all RLNT-Relentless Additions
+Description:  Init for all RLNT-Additions
 */
 
 
@@ -12,4 +12,4 @@ if (rlnt_debug) then {
 
 
 execVM "rlnt\eventHandlers\RLNT_eventHandlers.sqf";                             //EventHandlers
-execVM "rlnt\scripts\Update Panel\RLNT_up_init.sqf";                            //Custom Update Panel
+execVM "rlnt\scripts\Update Panel\RLNT_up_init.sqf";                            //RLNT Update Panel

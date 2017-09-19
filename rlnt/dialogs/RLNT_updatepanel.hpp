@@ -1,7 +1,7 @@
 /*
 Filename:     RLNT_updatepanel.hpp
 Author:       Relentless
-Description:  Displays for RLNT-CustomUpdatePanel
+Description:  Displays for Update Panel
 Calculation:  1 GUI_GRID = 0.0173 * SafezoneH
 */
 

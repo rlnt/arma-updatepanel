@@ -1,7 +1,7 @@
 /*
 Filename:     RLNT_eventHandlers.sqf
 Author:       Relentless
-Description:  All server-sided Eventhandlers for RLNT-Additions
+Description:  All server-sided EventHandlers for RLNT-Additions
 */
 
 
@@ -11,7 +11,7 @@ if (rlnt_debug) then {
 };
 
 
-/*  Custom Update Panel  */
+/*  Update Panel  */
   "RLNT_up_global" addPublicVariableEventHandler {
 
     if (rlnt_up_debug) then {

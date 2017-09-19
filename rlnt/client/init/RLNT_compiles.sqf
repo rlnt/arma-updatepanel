@@ -41,6 +41,6 @@ if (rlnt_debug) then {
 	diag_log "[RLNT][MAIN] Compiles are loading...";
 };
 
-	//Custom Update Panel
+	//Update Panel
 		RLNT_updatePanel 			= compile preprocessFileLineNumbers "rlnt\functions\RLNT_up_main.sqf";
 		RLNT_up_setup					= compile preprocessFileLineNumbers "rlnt\functions\RLNT_up_setup.sqf";
