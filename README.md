@@ -5,7 +5,9 @@
 
 [Go to Epoch forum thread][rlnt_up_epochforum]<br>
 [Report issues/bugs/problems][githubissues]<br>
-[Suggest features/ideas][githubsuggestions]
+[Suggest features/ideas][githubsuggestions]<br><br>
+
+[All Releases][githubreleases]
 
 ---
 
@@ -313,6 +315,7 @@ Keep in mind if you do that, it will take all the arguments from your config!
 [rlnt_up_epochforum]: https://epochmod.com/forum/topic/44485-release-custom-update-panel-16092017-10/ "Go to source"
 [githubissues]: https://github.com/DAmNRelentless/CustomUpdatePanel/issues/1 "Go to source"
 [githubsuggestions]: https://github.com/DAmNRelentless/CustomUpdatePanel/issues/2 "Go to source"
+[githubreleases]: https://github.com/DAmNRelentless/CustomUpdatePanel/releases "Go to source"
 [sp4rkygithub]: https://github.com/SPKcoding/ "Go to source"
 [ibengithub]: https://github.com/infobeny/ "Go to source"
 [goliasgithub]: https://github.com/LordGolias/ "Go to source"
