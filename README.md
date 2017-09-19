@@ -142,7 +142,7 @@ class Header
 + Paste the following codeblock **after** it:
 ```sqf
 class RscTitles {
-  #include "rlnt\dialogs\RLNT_displays.hpp"  /*  RLNT-Additions  */
+  #include "rlnt\graphics\RLNT_displays.hpp"  /*  RLNT-Additions  */
 	class wm_disp {
 		idd = -1;
 		onLoad = "uiNamespace setVariable ['wm_disp', _this select 0]";
@@ -180,7 +180,7 @@ class RscTitles {
 ```
 + Now, paste the following line **at the very bottom** of the file:
 ```sqf
-#include "rlnt\dialogs\RLNT_dialogs.hpp"  /*  RLNT-Additions  */
+#include "rlnt\graphics\RLNT_dialogs.hpp"  /*  RLNT-Additions  */
 ```
 
 7. Seventh Step:
@@ -313,7 +313,7 @@ Keep in mind if you do that, it will take all the arguments from your config!
 
 ---
 
-[rlnt_up_epochforum]: https://epochmod.com/forum/topic/44485-release-custom-update-panel-16092017-10/ "Go to source"
+[rlnt_up_epochforum]: https://epochmod.com/forum/topic/44485-release-rlnt-update-panel-19092017-v13/ "Go to source"
 [githubissues]: https://github.com/DAmNRelentless/RLNTUpdatePanel/issues/1 "Go to source"
 [githubsuggestions]: https://github.com/DAmNRelentless/RLNTUpdatePanel/issues/2 "Go to source"
 [githubreleases]: https://github.com/DAmNRelentless/RLNTUpdatePanel/releases "Go to source"

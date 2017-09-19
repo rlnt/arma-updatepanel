@@ -16,7 +16,7 @@ People like Scripters and Devs can also make a use of it
 by implementing it into their scripts to have a new way
 of displaying notifications. No more ugly Hint boxes or
 format texts. Read more on the Epoch-Forum-Thread:
-http://bit.ly/2xstFdx
+http://bit.ly/2yaCtBM
 */
 
 /*
@@ -67,7 +67,7 @@ rlnt_up_Side          = "local";       /* default: "local" */
 ////  Example image: https://i.imgur.com/yVrZRJR.png    ////
 ////  THE OPTION HAS TO BE AN INTEGER!                  ////
 ////  If you want more styles, suggest them in this     ////
-////  topic: http://bit.ly/2xstFdx                      ////
+////  topic: http://bit.ly/2yaCtBM                      ////
 ////////////////////////////////////////////////////////////
 rlnt_up_Style         = 1;             /* default: 1 */
 
