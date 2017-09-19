@@ -290,7 +290,7 @@ rlnt_updatepanel_style_1,rlnt_updatepanel_style_2,rlnt_updatepanel_style_3,rlnt_
 + Format is [red,green,blue,alpha] aka [r,g,b,a]
 + I always suggest alpha = 0.7
 
-**Due to the fact that all arguments are optional you can also execute like this:**
+**Due to the fact that all arguments are optional you can also execute like this:**<br>
 Keep in mind if you do that, it will take all the arguments from your config!
 ```sqf
 [] spawn RLNT_updatePanel;
