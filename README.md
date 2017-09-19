@@ -19,6 +19,7 @@
 + **@Iben:** I got this wonderful github formatting from him. ([Visit him on github][ibengithub])
 + **@He-Man:** He made me familiar with eventHandlers and communication between client and server.
 + **@LordGolias:** He made an amazing sqf-linter for the Atom-Editor. ([Visit him on github][goliasgithub])
++ **@DirtySanchez:** Helps me to improve my scripts. ([Visit him on github][sanchezgithub])
 + **@Epoch-Discord:** Especially to @salival, @bigegg, @dirtysanchez @scubasteve. These guys on there are always helpful and very patient. Sometimes I feel like I am the only one with questions. :D ([Join the Discord][epochdiscord])
 
 ---
@@ -303,12 +304,12 @@ Keep in mind if you do that, it will take all the arguments from your config!
 <a name="changelog"></a>
 ## Changelog
 
-| Date         | Version | Description                                                                                       												 				|
-| :---         | :---    | :---                                                                                              												 				|
-| [16.09.2017] | v1.0    | Initial release																																									 												 				|
-| [17.09.2017] | v1.1		 | Minor adjustments to fix known problems and structure<br>_Changes:_ [[commit dbef01d][update1]]	 												 				|
-| [18.09.2017] | v1.2		 | Added two new styles, added links to config<br>_Changes:_ [[commit 0248494][update2]]						 												 				|
-| [19.09.2017] | v1.3		 | Made all arguments optional, added new pubVar-finding alghorithm, adjusted Readme<br>_Changes:_ [[commit acaff6a][update3]]			|
+| Date         | Version | Description                                                                                       												 															|
+| :---         | :---    | :---                                                                                              												 															|
+| [16.09.2017] | v1.0    | Initial release																																									 												 															|
+| [17.09.2017] | v1.1		 | Minor adjustments to fix known problems and structure<br>_Changes:_ [[commit dbef01d][update1]]	 												 															|
+| [18.09.2017] | v1.2		 | Added two new styles, added links to config<br>_Changes:_ [[commit 0248494][update2]]						 												 															|
+| [19.09.2017] | v1.3		 | Made all arguments optional, added new pubVar-finding alghorithm, adjusted Readme<br>_Changes:_ [[commit acaff6a][update3]] [[commit d724d34][update4]]				|
 
 ---
 
@@ -319,6 +320,7 @@ Keep in mind if you do that, it will take all the arguments from your config!
 [sp4rkygithub]: https://github.com/SPKcoding/ "Go to source"
 [ibengithub]: https://github.com/infobeny/ "Go to source"
 [goliasgithub]: https://github.com/LordGolias/ "Go to source"
+[sanchezgithub]: https://github.com/ravmustang/ "Go to source"
 [epochdiscord]: https://discord.gg/0k4ynDDCsnMzkxk7 "Go to source"
 [htmlcolor]: https://www.w3schools.com/colors/colors_picker.asp "Go to source"
 [colorconverter]: http://killzonekid.com/hex-2-arma-gui-colour-converter/ "Go to source"
@@ -329,3 +331,4 @@ Keep in mind if you do that, it will take all the arguments from your config!
 [update1]: https://github.com/DAmNRelentless/CustomUpdatePanel/commit/dbef01d0ec8ff592ee0bbeb4cd6db5bb7a01d613 "Go to source"
 [update2]: https://github.com/DAmNRelentless/CustomUpdatePanel/commit/024849451658bb906a625a9ae7ade9109076b071 "Go to source"
 [update3]: https://github.com/DAmNRelentless/CustomUpdatePanel/commit/acaff6a224581c34e64fcae004f0991b07fc1d95 "Go to source"
+[update4]: https://github.com/DAmNRelentless/CustomUpdatePanel/commit/d724d34c3173ccf95dd6dddfdae0ec9e48a28f6b "Go to source"
