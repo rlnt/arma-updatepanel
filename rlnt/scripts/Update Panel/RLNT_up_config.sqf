@@ -76,7 +76,7 @@ rlnt_up_Style         = 1;             /* default: 1 */
 ////  Default string that defines the text that's used  ////
 ////  as the header of the Update Panel.                ////
 ////  THE OPTION HAS TO BE A STRING!                    ////
-////  MAXIMUM CHAR AMOUNT IS 13!                        ////
+////  MAXIMUM CHAR AMOUNT IS 16!                        ////
 ////////////////////////////////////////////////////////////
 rlnt_up_Header        = "RLNT Panel:";
 

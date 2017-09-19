@@ -2,7 +2,7 @@
 Filename:     RLNT_up_setup.sqf
 Author:       Relentless
 Description:  Creation function for RLNT-CustomUpdatePanel
-Call:         [_upStyle,_upHeader,_upLine1,_upLine2,_upImg,_upDuration,_upFontColor,_upBgColor] spawn RLNT_up_setup;
+Call:         _varArray spawn RLNT_up_setup;
 */
 private ["_upStyle","_upHeader","_upLine1","_upLine2","_upImg","_upDuration","_upFontColor","_upBgColor","_layer","_display","_cHeader","_cLine1","_cLine2","_cImg","_cFontColor","_cBgColor"];
 disableSerialization;
@@ -15,14 +15,14 @@ if (rlnt_debug) then {
 
 
 /*  Variables  */
-_upStyle      = _this select 0;
-_upHeader     = _this select 1;
-_upLine1      = _this select 2;
-_upLine2      = _this select 3;
-_upImg        = _this select 4;
-_upDuration   = _this select 5;
-_upFontColor  = _this select 6;
-_upBgColor    = _this select 7;
+_upStyle      = _this select 1;
+_upHeader     = _this select 2;
+_upLine1      = _this select 3;
+_upLine2      = _this select 4;
+_upImg        = _this select 5;
+_upDuration   = _this select 6;
+_upFontColor  = _this select 7;
+_upBgColor    = _this select 8;
 _layer        = 1302;
 
 
@@ -59,7 +59,7 @@ switch (_upStyle) do {
 
   //Left upper corner without image (PLAIN)
   case 2: {
-    _layer cutRsc ["rlnt_updatepnael_style_2","PLAIN",1];
+    _layer cutRsc ["rlnt_updatepanel_style_2","PLAIN",1];
     sleep 0.01;
 
     if (rlnt_up_debug) then {
