@@ -116,6 +116,25 @@ Calculation:  1 GUI_GRID = 0.0173 * SafezoneH
       w = 0;
     };
 
+    class RLNT_RscText_Shadow {
+      access = 0;
+      idc = -1;
+      type = CT_STATIC;
+      style = 0;
+      linespacing = 1;
+      colorBackground[] = {0,0,0,0};
+      colorText[] = {1,1,1,1};
+      text = "";
+      shadow = 1;
+      font = "Zeppelin32";
+      sizeEx = 0.0173 * SafezoneH;
+      fixedWidth = 0;
+      x = 0;
+      y = 0;
+      h = 0;
+      w = 0;
+    };
+
 
   //Picture
     class RLNT_RscPicture {

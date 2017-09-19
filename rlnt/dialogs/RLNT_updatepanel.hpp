@@ -80,7 +80,7 @@ class rlnt_updatepanel_style_2 {
 	onLoad = "uiNamespace setVariable ['rlnt_updatepanel_style_2', _this select 0];";
 
 	class Controls {
-		class rlnt_text_header: RLNT_RscText
+		class rlnt_text_header: RLNT_RscText_Shadow
 		{
 			idc = 1028;
 			text = "";
@@ -90,7 +90,7 @@ class rlnt_updatepanel_style_2 {
 			h = 0.0329878 * safezoneH;
 			sizeEx = 0.02076 * SafezoneH;
 		};
-		class rlnt_text_line_1: RLNT_RscText
+		class rlnt_text_line_1: RLNT_RscText_Shadow
 		{
 			idc = 1029;
 			text = "";
@@ -100,7 +100,7 @@ class rlnt_updatepanel_style_2 {
 			h = 0.0175934 * safezoneH;
 			sizeEx = 0.0173 * SafezoneH;
 		};
-		class rlnt_text_line_2: RLNT_RscText
+		class rlnt_text_line_2: RLNT_RscText_Shadow
 		{
 			idc = 1030;
 			text = "";
@@ -205,7 +205,7 @@ class rlnt_updatepanel_style_4 {
 	onLoad = "uiNamespace setVariable ['rlnt_updatepanel_style_4', _this select 0];";
 
 	class Controls {
-		class rlnt_text_header: RLNT_RscText
+		class rlnt_text_header: RLNT_RscText_Shadow
 		{
 			idc = 1028;
 			text = "";
@@ -215,7 +215,7 @@ class rlnt_updatepanel_style_4 {
 			h = 0.0329878 * safezoneH;
 			sizeEx = 0.02076 * SafezoneH;
 		};
-		class rlnt_text_line_1: RLNT_RscText
+		class rlnt_text_line_1: RLNT_RscText_Shadow
 		{
 			idc = 1029;
 			text = "";
@@ -225,7 +225,7 @@ class rlnt_updatepanel_style_4 {
 			h = 0.0175934 * safezoneH;
 			sizeEx = 0.0173 * SafezoneH;
 		};
-		class rlnt_text_line_2: RLNT_RscText
+		class rlnt_text_line_2: RLNT_RscText_Shadow
 		{
 			idc = 1030;
 			text = "";
