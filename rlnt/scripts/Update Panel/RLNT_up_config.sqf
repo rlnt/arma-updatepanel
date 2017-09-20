@@ -151,3 +151,6 @@ rlnt_up_BgColor       = [0,0.2,0,0.7]; /* default: [0,0.2,0,0.7] */
 ////  DON'T EDIT IF YOU DON'T KNOW WHAT YOU ARE DOING!  ////
 ////////////////////////////////////////////////////////////
 rlnt_up_debug         = false;         /* default: false */
+
+/*  Don't edit blow  */
+rlnt_up_configLoaded = true;
