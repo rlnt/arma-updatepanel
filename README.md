@@ -60,8 +60,7 @@ It's pretty easy. Make sure to follow the instructions carefully in case you hav
 
 2. Second Step:
 + If you downloaded it as zip, extract it and open the folder. If you cloned it, just open the folder.
-+ **In that folder**, go to "\dayz_server\eventHandlers\".
-+ Do the same on your Epoch-Server and move the file "RLNT_eventHandlers.sqf" **from the downloaded folder** into the corresponding folder **on the server**.
++ **In that folder**, open the "dayz_server" folder and copy and "rlnt" folder into your dayz_server.pbo.
 
 3. Third Step:
 + **On your Epoch server**, go to "dayz_server\init\" and open "server_functions.sqf".
@@ -71,7 +70,7 @@ server_sendToClient = compile preprocessFileLineNumbers "\z\addons\dayz_server\e
 ```
 + Paste the following line **below** it:
 ```sqf
-compile preprocessFileLineNumbers "\z\addons\dayz_server\eventHandlers\RLNT_eventHandlers.sqf";  /*  RLNT-Additions  */
+compile preprocessFileLineNumbers "\z\addons\dayz_server\rlnt\eventHandlers\RLNT_eventHandlers.sqf";  /*  RLNT-Additions  */
 ```
 
 ---
