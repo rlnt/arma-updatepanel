@@ -117,7 +117,7 @@ if (!isDedicated) then {
 ```
 + Paste the following line **after** it:
 ```sqf
-execVM "rlnt\scripts\RLNT_init.sqf";  /*  RLNT-Additions  */
+execVM "rlnt\addons\RLNT_init.sqf";  /*  RLNT-Additions  */
 ```
 
 6. Sixth Step (read carefully):
@@ -183,7 +183,7 @@ class RscTitles {
 ```
 
 7. Seventh Step:
-+ **On your Epoch server**, open "mpmission\rlnt\scripts\Update Panel\RLNT_up_config.sqf", read trough it and edit it to your liking.
++ **On your Epoch server**, open "mpmission\rlnt\addons\Update Panel\RLNT_up_config.sqf", read trough it and edit it to your liking.
 
 **That's it, you're done!**
 

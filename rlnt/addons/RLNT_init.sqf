@@ -12,4 +12,4 @@ if (rlnt_debug) then {
 
 
 execVM "rlnt\eventHandlers\RLNT_eventHandlers.sqf";                             //EventHandlers
-execVM "rlnt\scripts\Update Panel\RLNT_up_init.sqf";                            //RLNT Update Panel
+execVM "rlnt\addons\Update Panel\RLNT_up_init.sqf";                            //RLNT Update Panel
