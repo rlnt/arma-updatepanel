@@ -12,6 +12,7 @@ Description:  All functions for RLNT-Additions
 ////  DON'T EDIT IF YOU DON'T KNOW WHAT YOU ARE DOING!  ////
 ////////////////////////////////////////////////////////////
 rlnt_debug            = false;         /* default: false */
+publicVariableServer "rlnt_debug";
 
 
 /*  Default RLNT Debug  */
