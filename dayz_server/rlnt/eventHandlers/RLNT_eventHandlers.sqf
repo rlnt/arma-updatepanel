@@ -6,7 +6,9 @@ Description:  All server-sided EventHandlers for RLNT-Additions
 
 
 /*  Error-Prevention  */
-waitUntil {sleep 0.5; rlnt_initLoaded};
+while {isNil rlnt_debug} do {
+  sleep 5;
+};
 
 
 /*  Default RLNT Debug  */

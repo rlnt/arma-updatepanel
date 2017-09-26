@@ -5,8 +5,17 @@ Description:  Client Init for all RLNT-Additions
 */
 
 
+/*  Variables  */
+rlnt_initLoaded       = false;
+rlnt_up_initLoaded    = false;
+rlnt_up_configLoaded  = false;
+publicVariableServer "rlnt_initLoaded";
+publicVariableServer "rlnt_up_initLoaded";
+publicVariableServer "rlnt_up_configLoaded";
+
+
 ////////////////////////////////////////////////////////////
-////  Developer-Options:                                ////
+////  Developer-Option:                                 ////
 ////  Variable to toggle on and off advanced options    ////
 ////  to help devs finding bugs in this script.         ////
 ////  DON'T EDIT IF YOU DON'T KNOW WHAT YOU ARE DOING!  ////
@@ -21,6 +30,7 @@ if (rlnt_debug) then {
 };
 
 
+execVM "rlnt\client\init\RLNT_compiles.sqf";                                    //Compiles
 execVM "rlnt\eventHandlers\RLNT_eventHandlers.sqf";                             //EventHandlers
 execVM "rlnt\addons\Update Panel\RLNT_up_init.sqf";                             //RLNT Update Panel
 

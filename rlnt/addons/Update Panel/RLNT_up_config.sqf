@@ -139,12 +139,13 @@ rlnt_up_FontColor     = [1,1,1,1];     /* default: [1,1,1,1] */
 rlnt_up_BgColor       = [0,0.2,0,0.7]; /* default: [0,0.2,0,0.7] */
 
 ////////////////////////////////////////////////////////////
-////  Developer-Options:                                ////
+////  Developer-Option:                                 ////
 ////  Variable to toggle on and off advanced options    ////
 ////  to help devs finding bugs in this script.         ////
 ////  DON'T EDIT IF YOU DON'T KNOW WHAT YOU ARE DOING!  ////
 ////////////////////////////////////////////////////////////
 rlnt_up_debug         = false;         /* default: false */
+publicVariableServer "rlnt_up_debug";
 
 
 /*  Don't edit blow  */
@@ -153,4 +154,10 @@ if (rlnt_debug) then {
 };
 
 rlnt_up_defaults = [rlnt_up_Side,rlnt_up_Style,rlnt_up_Header,rlnt_up_Line1,rlnt_up_Line2,rlnt_up_Img,rlnt_up_Duration,rlnt_up_FontColor,rlnt_up_BgColor];
+
+if (rlnt_up_debug) then {
+  diag_log format ["[RLNT][UP] The default variable array is %1.", str(rlnt_up_defaults)];
+};
+
 rlnt_up_configLoaded = true;
+publicVariableServer "rlnt_up_configLoaded";

@@ -27,7 +27,7 @@ base_fireMonitor = compile preprocessFileLineNumbers "\z\addons\dayz_code\system
 //server_systemCleanup = compile preprocessFileLineNumbers "\z\addons\dayz_server\system\server_cleanup.sqf";
 spawnComposition = compile preprocessFileLineNumbers "ca\modules\dyno\data\scripts\objectMapper.sqf"; //"\z\addons\dayz_code\compile\object_mapper.sqf";
 server_sendToClient = compile preprocessFileLineNumbers "\z\addons\dayz_server\eventHandlers\server_sendToClient.sqf";
-compile preprocessFileLineNumbers "\z\addons\dayz_server\rlnt\eventHandlers\RLNT_eventHandlers.sqf";	/*  RLNT-Additions  */
+call compile preprocessFileLineNumbers "\z\addons\dayz_server\rlnt\eventHandlers\RLNT_eventHandlers.sqf";	/*  RLNT-Additions  */
 
 // EPOCH ADDITIONS
 server_addCargo = compile preprocessFileLineNumbers "\z\addons\dayz_server\compile\server_addCargo.sqf";

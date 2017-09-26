@@ -1,5 +1,5 @@
 # RLNT Update Panel
-**For DayZ Epoch 1.0.6.1+**<br>_Last update: [19.09.2017]_<br>_v1.3_ ([Changelog](#changelog))
+**For DayZ Epoch 1.0.6.1+**<br>_Last update: [26.09.2017]_<br>_v1.4_ ([Changelog](#changelog))
 
 ---
 
@@ -70,7 +70,7 @@ server_sendToClient = compile preprocessFileLineNumbers "\z\addons\dayz_server\e
 ```
 + Paste the following line **below** it:
 ```sqf
-compile preprocessFileLineNumbers "\z\addons\dayz_server\rlnt\eventHandlers\RLNT_eventHandlers.sqf";  /*  RLNT-Additions  */
+call compile preprocessFileLineNumbers "\z\addons\dayz_server\rlnt\eventHandlers\RLNT_eventHandlers.sqf";  /*  RLNT-Additions  */
 ```
 
 ---
@@ -84,15 +84,7 @@ Congratulations, you managed the server-sided installation part! Let's continue 
 + Do the same with the "rlnt" folder **from the downloaded folder**.
 
 5. Fifth Step:
-+ **On your Epoch server**, open "mpmission\init.sqf" and search this line:
-```sqf
-call compile preprocessFileLineNumbers "\z\addons\dayz_code\init\compiles.sqf";
-```
-+ Paste the following line **below** it:
-```sqf
-call compile preprocessFileLineNumbers "rlnt\client\init\RLNT_compiles.sqf";  /*  RLNT-Additions  */
-```
-+ Now, search for the "!isDedicated"-codeblock, which looks like that:
++ **On your Epoch server**, open "mpmission\init.sqf" and search this codeblock:
 ```sqf
 if (!isDedicated) then {
 	//Enables Plant lib fixes
@@ -115,7 +107,7 @@ if (!isDedicated) then {
 	endLoadingScreen;
 };
 ```
-+ Paste the following line **after** it:
++ Paste the following line **below** it:
 ```sqf
 execVM "rlnt\addons\RLNT_init.sqf";  /*  RLNT-Additions  */
 ```
@@ -308,8 +300,8 @@ Keep in mind if you do that, it will take all the arguments from your config!
 | [16.09.2017] | v1.0    | Initial release																																									 												 															|
 | [17.09.2017] | v1.1		 | Minor adjustments to fix known problems and structure<br>_Changes:_ [[commit dbef01d][update1]]	 												 															|
 | [18.09.2017] | v1.2		 | Added two new styles, added links to config<br>_Changes:_ [[commit 0248494][update2]]						 												 															|
-| [19.09.2017] | v1.3		 | Made all arguments optional, added new pubVar-finding alghorithm, adjusted Readme<br>_Changes:_ [[commit acaff6a][update3]] [[commit d724d34][update4]]				|
-
+| [19.09.2017] | v1.3		 | Made all arguments optional, added new pubVar-finding alghorithm, adjusted Readme<br>_Changes:_ [[commit acaff6a][update3]] [[commit 			  d724d34][update4]]																																																																																|
+| [26.09.2017] | v1.4		 | Fixed receiver, fixed debug, adjusted config, fixed optional and nil-arguments  _Thanks to:_ @SmokeyBR<br>_Changes:_ [[commit ][update5]]							|
 ---
 
 [rlnt_up_epochforum]: https://epochmod.com/forum/topic/44485-release-rlnt-update-panel-19092017-v13/ "Go to source"
@@ -331,3 +323,4 @@ Keep in mind if you do that, it will take all the arguments from your config!
 [update2]: https://github.com/DAmNRelentless/RLNTUpdatePanel/commit/024849451658bb906a625a9ae7ade9109076b071 "Go to source"
 [update3]: https://github.com/DAmNRelentless/RLNTUpdatePanel/commit/acaff6a224581c34e64fcae004f0991b07fc1d95 "Go to source"
 [update4]: https://github.com/DAmNRelentless/RLNTUpdatePanel/commit/d724d34c3173ccf95dd6dddfdae0ec9e48a28f6b "Go to source"
+[update5]: "Go to source"

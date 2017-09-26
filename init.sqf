@@ -101,7 +101,6 @@ progressLoadingScreen 0.1;
 call compile preprocessFileLineNumbers "\z\addons\dayz_code\medical\setup_functions_med.sqf";
 progressLoadingScreen 0.15;
 call compile preprocessFileLineNumbers "\z\addons\dayz_code\init\compiles.sqf";
-call compile preprocessFileLineNumbers "rlnt\client\init\RLNT_compiles.sqf";  /*  RLNT-Additions  */
 if (_verCheck) then {
 	#include "DZE_Hotfix_1.0.6.1A\init\compiles.sqf"
 };

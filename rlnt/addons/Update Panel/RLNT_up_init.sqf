@@ -19,7 +19,6 @@ if (rlnt_debug) then {
 execVM "rlnt\addons\Update Panel\RLNT_up_config.sqf";
 
 
-/*  UP RLNT Debug  */
-if (rlnt_up_debug) then {
-  diag_log format ["[RLNT][UP] The default variable array is %1.", str(rlnt_up_defaults)];
-};
+/*  Error-Prevention  */
+rlnt_up_initLoaded = true;
+publicVariableServer "rlnt_up_initLoaded";
