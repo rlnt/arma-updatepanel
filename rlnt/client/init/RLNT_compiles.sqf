@@ -5,14 +5,8 @@ Description:  All functions for RLNT-Additions
 */
 
 
-////////////////////////////////////////////////////////////
-////  Developer-Option:                                 ////
-////  Variable to toggle on and off an advanced option  ////
-////  to help devs finding bugs in RLNT scripts.        ////
-////  DON'T EDIT IF YOU DON'T KNOW WHAT YOU ARE DOING!  ////
-////////////////////////////////////////////////////////////
-rlnt_debug            = false;         /* default: false */
-publicVariableServer "rlnt_debug";
+/*  Error-Prevention  */
+waitUntil {sleep 0.5; rlnt_up_configLoaded};
 
 
 /*  Default RLNT Debug  */

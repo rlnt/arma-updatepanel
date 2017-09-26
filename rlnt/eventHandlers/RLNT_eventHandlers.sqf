@@ -5,6 +5,10 @@ Description:  All client-sided EventHandlers for RLNT-Additions
 */
 
 
+/*  Error-Prevention  */
+waitUntil {sleep 0.5; rlnt_initLoaded};
+
+
 /*  Default RLNT Debug  */
 if (rlnt_debug) then {
   diag_log "[RLNT][MAIN] The Client RLNT_eventHandlers.sqf was succesfully loaded!";
