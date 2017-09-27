@@ -6,7 +6,7 @@ Description:  All server-sided EventHandlers for RLNT-Additions
 
 
 /*  Error-Prevention  */
-while {isNil rlnt_debug} do {
+while {isNil "rlnt_debug"} do {
   sleep 5;
 };
 

@@ -32,7 +32,7 @@ if (rlnt_debug) then {
 
 execVM "rlnt\client\init\RLNT_compiles.sqf";                                    //Compiles
 execVM "rlnt\eventHandlers\RLNT_eventHandlers.sqf";                             //EventHandlers
-execVM "rlnt\addons\Update Panel\RLNT_up_init.sqf";                             //RLNT Update Panel
+execVM "rlnt\addons\Update Panel\RLNT_up_init.sqf";                             //Update Panel
 
 
 /*  Error-Prevention  */
