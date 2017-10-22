@@ -10,7 +10,7 @@ disableSerialization;
 
 /*  Default RLNT Debug  */
 if (rlnt_debug) then {
-  diag_log "[RLNT][MAIN] The RLNT_up_setup.sqf was succesfully loaded!";
+    diag_log "[RLNT][MAIN] The RLNT_up_setup.sqf was succesfully loaded!";
 };
 
 
@@ -29,117 +29,117 @@ _layer        = 1302;
 /*  Check for the style  */
 switch (_upStyle) do {
 
-  //Left upper corner without image
-  case 1: {
-    _layer cutRsc ["rlnt_updatepanel_style_1","PLAIN",1];
-    sleep 0.01;
+    //Left upper corner without image
+    case 1: {
+        _layer cutRsc ["rlnt_updatepanel_style_1","PLAIN",1];
+        sleep 0.01;
 
-    if (rlnt_up_debug) then {
-      diag_log "[RLNT][UP] The RLNT_up_setup.sqf decided style 1!";
+        if (rlnt_up_debug) then {
+            diag_log "[RLNT][UP] The RLNT_up_setup.sqf decided style 1!";
+        };
+
+        _display    = uiNamespace getVariable["rlnt_updatepanel_style_1", displayNull];
+        _cBgColor   = _display displayCtrl 1027;
+        _cFontColor = [_display displayCtrl 1028,_display displayCtrl 1029,_display displayCtrl 1030];
+        _cHeader    = _display displayCtrl 1028;
+        _cLine1     = _display displayCtrl 1029;
+        _cLine2     = _display displayCtrl 1030;
+
+        //Set Background Color
+            _cBgColor ctrlSetBackgroundColor _upBgColor;
+        //Set Font Color
+            {
+                _x ctrlSetTextColor _upFontColor;
+            } forEach _cFontColor;
+        //Set Text Header and Lines
+            _cHeader ctrlSetText(_upHeader);
+            _cLine1 ctrlSetText(_upLine1);
+            _cLine2 ctrlSetText(_upLine2);
     };
 
-    _display    = uiNamespace getVariable["rlnt_updatepanel_style_1", displayNull];
-    _cBgColor   = _display displayCtrl 1027;
-    _cFontColor = [_display displayCtrl 1028,_display displayCtrl 1029,_display displayCtrl 1030];
-    _cHeader    = _display displayCtrl 1028;
-    _cLine1     = _display displayCtrl 1029;
-    _cLine2     = _display displayCtrl 1030;
+    //Left upper corner without image (PLAIN)
+    case 2: {
+        _layer cutRsc ["rlnt_updatepanel_style_2","PLAIN",1];
+        sleep 0.01;
 
-    //Set Background Color
-      _cBgColor ctrlSetBackgroundColor _upBgColor;
-    //Set Font Color
-      {
-        _x ctrlSetTextColor _upFontColor;
-      } forEach _cFontColor;
-    //Set Text Header and Lines
-      _cHeader ctrlSetText(_upHeader);
-      _cLine1 ctrlSetText(_upLine1);
-      _cLine2 ctrlSetText(_upLine2);
-  };
+        if (rlnt_up_debug) then {
+            diag_log "[RLNT][UP] The RLNT_up_setup.sqf decided style 2!";
+        };
 
-  //Left upper corner without image (PLAIN)
-  case 2: {
-    _layer cutRsc ["rlnt_updatepanel_style_2","PLAIN",1];
-    sleep 0.01;
+        _display    = uiNamespace getVariable["rlnt_updatepanel_style_2", displayNull];
+        _cFontColor = [_display displayCtrl 1028,_display displayCtrl 1029,_display displayCtrl 1030];
+        _cHeader    = _display displayCtrl 1028;
+        _cLine1     = _display displayCtrl 1029;
+        _cLine2     = _display displayCtrl 1030;
 
-    if (rlnt_up_debug) then {
-      diag_log "[RLNT][UP] The RLNT_up_setup.sqf decided style 2!";
+        //Set Font Color
+            {
+                _x ctrlSetTextColor _upFontColor;
+            } forEach _cFontColor;
+        //Set Text for Header and Lines
+            _cHeader ctrlSetText(_upHeader);
+            _cLine1 ctrlSetText(_upLine1);
+            _cLine2 ctrlSetText(_upLine2);
     };
 
-    _display    = uiNamespace getVariable["rlnt_updatepanel_style_2", displayNull];
-    _cFontColor = [_display displayCtrl 1028,_display displayCtrl 1029,_display displayCtrl 1030];
-    _cHeader    = _display displayCtrl 1028;
-    _cLine1     = _display displayCtrl 1029;
-    _cLine2     = _display displayCtrl 1030;
+    //Left upper corner with image
+    case 3: {
+        _layer cutRsc ["rlnt_updatepanel_style_3","PLAIN",1];
+        sleep 0.01;
 
-    //Set Font Color
-      {
-        _x ctrlSetTextColor _upFontColor;
-      } forEach _cFontColor;
-    //Set Text for Header and Lines
-    _cHeader ctrlSetText(_upHeader);
-    _cLine1 ctrlSetText(_upLine1);
-    _cLine2 ctrlSetText(_upLine2);
-  };
+        if (rlnt_up_debug) then {
+            diag_log "[RLNT][UP] The RLNT_up_setup.sqf decided style 3!";
+        };
 
-  //Left upper corner with image
-  case 3: {
-    _layer cutRsc ["rlnt_updatepanel_style_3","PLAIN",1];
-    sleep 0.01;
+        _display    = uiNamespace getVariable["rlnt_updatepanel_style_3", displayNull];
+        _cBgColor   = _display displayCtrl 1027;
+        _cFontColor = [_display displayCtrl 1028,_display displayCtrl 1029,_display displayCtrl 1030];
+        _cHeader    = _display displayCtrl 1028;
+        _cLine1     = _display displayCtrl 1029;
+        _cLine2     = _display displayCtrl 1030;
+        _cImg       = _display displayCtrl 1206;
 
-    if (rlnt_up_debug) then {
-      diag_log "[RLNT][UP] The RLNT_up_setup.sqf decided style 3!";
+        //Set Background Color
+            _cBgColor ctrlSetBackgroundColor _upBgColor;
+        //Set Font Color
+            {
+                _x ctrlSetTextColor _upFontColor;
+            } forEach _cFontColor;
+        //Set Text Header and Lines
+            _cHeader ctrlSetText(_upHeader);
+            _cLine1 ctrlSetText(_upLine1);
+            _cLine2 ctrlSetText(_upLine2);
+        //Set Image
+            _cImg ctrlSetText(_upImg);
     };
 
-    _display    = uiNamespace getVariable["rlnt_updatepanel_style_3", displayNull];
-    _cBgColor   = _display displayCtrl 1027;
-    _cFontColor = [_display displayCtrl 1028,_display displayCtrl 1029,_display displayCtrl 1030];
-    _cHeader    = _display displayCtrl 1028;
-    _cLine1     = _display displayCtrl 1029;
-    _cLine2     = _display displayCtrl 1030;
-    _cImg       = _display displayCtrl 1206;
+    //Left upper corner with image (PLAIN)
+    case 4: {
+        _layer cutRsc ["rlnt_updatepanel_style_4","PLAIN",1];
+        sleep 0.01;
 
-    //Set Background Color
-      _cBgColor ctrlSetBackgroundColor _upBgColor;
-    //Set Font Color
-      {
-        _x ctrlSetTextColor _upFontColor;
-      } forEach _cFontColor;
-    //Set Text Header and Lines
-      _cHeader ctrlSetText(_upHeader);
-      _cLine1 ctrlSetText(_upLine1);
-      _cLine2 ctrlSetText(_upLine2);
-    //Set Image
-      _cImg ctrlSetText(_upImg);
-  };
+        if (rlnt_up_debug) then {
+            diag_log "[RLNT][UP] The RLNT_up_setup.sqf decided style 4!";
+        };
 
-  //Left upper corner with image (PLAIN)
-  case 4: {
-    _layer cutRsc ["rlnt_updatepanel_style_4","PLAIN",1];
-    sleep 0.01;
+        _display    = uiNamespace getVariable["rlnt_updatepanel_style_4", displayNull];
+        _cFontColor = [_display displayCtrl 1028,_display displayCtrl 1029,_display displayCtrl 1030];
+        _cHeader    = _display displayCtrl 1028;
+        _cLine1     = _display displayCtrl 1029;
+        _cLine2     = _display displayCtrl 1030;
+        _cImg       = _display displayCtrl 1206;
 
-    if (rlnt_up_debug) then {
-      diag_log "[RLNT][UP] The RLNT_up_setup.sqf decided style 4!";
+        //Set Font Color
+            {
+                _x ctrlSetTextColor _upFontColor;
+            } forEach _cFontColor;
+        //Set Text Header and Lines
+            _cHeader ctrlSetText(_upHeader);
+            _cLine1 ctrlSetText(_upLine1);
+            _cLine2 ctrlSetText(_upLine2);
+        //Set Image
+            _cImg ctrlSetText(_upImg);
     };
-
-    _display    = uiNamespace getVariable["rlnt_updatepanel_style_4", displayNull];
-    _cFontColor = [_display displayCtrl 1028,_display displayCtrl 1029,_display displayCtrl 1030];
-    _cHeader    = _display displayCtrl 1028;
-    _cLine1     = _display displayCtrl 1029;
-    _cLine2     = _display displayCtrl 1030;
-    _cImg       = _display displayCtrl 1206;
-
-    //Set Font Color
-      {
-        _x ctrlSetTextColor _upFontColor;
-      } forEach _cFontColor;
-    //Set Text Header and Lines
-      _cHeader ctrlSetText(_upHeader);
-      _cLine1 ctrlSetText(_upLine1);
-      _cLine2 ctrlSetText(_upLine2);
-    //Set Image
-      _cImg ctrlSetText(_upImg);
-  };
 
 };
 

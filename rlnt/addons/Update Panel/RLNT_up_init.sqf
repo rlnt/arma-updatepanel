@@ -11,7 +11,7 @@ waitUntil {sleep 0.5; rlnt_initLoaded};
 
 /*  Default RLNT Debug  */
 if (rlnt_debug) then {
-  diag_log "[RLNT][MAIN] The Update Panel Init was succesfully loaded!";
+    diag_log "[RLNT][MAIN] The Update Panel Init was succesfully loaded!";
 };
 
 

@@ -26,7 +26,7 @@ publicVariableServer "rlnt_debug";
 
 /*  Default RLNT Debug  */
 if (rlnt_debug) then {
-  diag_log "[RLNT][MAIN] The Client RLNT_init.sqf was succesfully loaded!";
+    diag_log "[RLNT][MAIN] The Client RLNT_init.sqf was succesfully loaded!";
 };
 
 

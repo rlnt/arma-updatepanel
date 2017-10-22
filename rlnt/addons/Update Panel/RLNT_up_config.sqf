@@ -150,13 +150,13 @@ publicVariableServer "rlnt_up_debug";
 
 /*  Don't edit blow  */
 if (rlnt_debug) then {
-  diag_log "[RLNT][MAIN] The Update Panel Config was succesfully loaded!";
+    diag_log "[RLNT][MAIN] The Update Panel Config was succesfully loaded!";
 };
 
 rlnt_up_defaults = [rlnt_up_Side,rlnt_up_Style,rlnt_up_Header,rlnt_up_Line1,rlnt_up_Line2,rlnt_up_Img,rlnt_up_Duration,rlnt_up_FontColor,rlnt_up_BgColor];
 
 if (rlnt_up_debug) then {
-  diag_log format ["[RLNT][UP] The default variable array is: %1.", str(rlnt_up_defaults)];
+    diag_log format ["[RLNT][UP] The default variable array is: %1.", str(rlnt_up_defaults)];
 };
 
 rlnt_up_configLoaded = true;
