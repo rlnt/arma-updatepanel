@@ -1,8 +1,8 @@
 /*
-Filename:     RLNT_updatepanel.hpp
-Author:       Relentless
-Description:  Displays for Update Panel
-Calculation:  1 GUI_GRID = 0.0173 * SafezoneH
+Filename:		RLNT_updatepanel.hpp
+Author:			Relentless
+Description:	Displays for Update Panel
+Calculation:	1 GUI_GRID = 0.0173 * SafezoneH
 */
 
 class rlnt_updatepanel_style_1 {

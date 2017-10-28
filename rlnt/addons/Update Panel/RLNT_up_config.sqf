@@ -1,7 +1,7 @@
 /*
-Filename:     RLNT_up_config.sqf
-Author:       Relentless
-Description:  Config for Update Panel
+Filename:		RLNT_up_config.sqf
+Author:			Relentless
+Description:	Config for Update Panel
 */
 
 
@@ -44,7 +44,7 @@ with nil.
 ////  global - Update Panel will be displayed globally  ////
 ////  THE OPTION HAS TO BE A STRING!                    ////
 ////////////////////////////////////////////////////////////
-rlnt_up_Side          = "local";       /* default: "local" */
+rlnt_up_Side = "local";  /* default: "local" */
 
 ////////////////////////////////////////////////////////////
 ////  Style-Option:                                     ////
@@ -63,7 +63,7 @@ rlnt_up_Side          = "local";       /* default: "local" */
 ////  If you want more styles, suggest them in this     ////
 ////  topic: http://bit.ly/2yaCtBM                      ////
 ////////////////////////////////////////////////////////////
-rlnt_up_Style         = 1;             /* default: 1 */
+rlnt_up_Style = 1;  /* default: 1 */
 
 ////////////////////////////////////////////////////////////
 ////  Header-Text-Option:                               ////
@@ -72,7 +72,7 @@ rlnt_up_Style         = 1;             /* default: 1 */
 ////  THE OPTION HAS TO BE A STRING!                    ////
 ////  MAXIMUM CHAR AMOUNT IS 16!                        ////
 ////////////////////////////////////////////////////////////
-rlnt_up_Header        = "RLNT Panel:";
+rlnt_up_Header = "RLNT Panel:";
 
 ////////////////////////////////////////////////////////////
 ////  Line 1-Text-Option:                               ////
@@ -81,7 +81,7 @@ rlnt_up_Header        = "RLNT Panel:";
 ////  THE OPTION HAS TO BE A STRING!                    ////
 ////  MAXIMUM CHAR AMOUNT IS 40!                        ////
 ////////////////////////////////////////////////////////////
-rlnt_up_Line1         = "Here could be your advertisement!";
+rlnt_up_Line1 = "Here could be your advertisement!";
 
 ////////////////////////////////////////////////////////////
 ////  Line 2-Text-Option:                               ////
@@ -90,7 +90,7 @@ rlnt_up_Line1         = "Here could be your advertisement!";
 ////  THE OPTION HAS TO BE A STRING!                    ////
 ////  MAXIMUM CHAR AMOUNT IS 40!                        ////
 ////////////////////////////////////////////////////////////
-rlnt_up_Line2         = "Here could be your advertisement!";
+rlnt_up_Line2 = "Here could be your advertisement!";
 
 ////////////////////////////////////////////////////////////
 ////  Image-Option:                                     ////
@@ -100,7 +100,7 @@ rlnt_up_Line2         = "Here could be your advertisement!";
 ////  I would always suggest a resolution of 340x300.   ////
 ////  The image has to be in .paa format.               ////
 ////////////////////////////////////////////////////////////
-rlnt_up_Img           = "rlnt\images\picture.paa";
+rlnt_up_Img = "rlnt\images\picture.paa";
 
 ////////////////////////////////////////////////////////////
 ////  Duration-Option:                                  ////
@@ -112,7 +112,7 @@ rlnt_up_Img           = "rlnt\images\picture.paa";
 ////  visibility, there will be 1 second before and     ////
 ////  after to fade in and out.                         ////
 ////////////////////////////////////////////////////////////
-rlnt_up_Duration      = 5;             /*  default: 5  */
+rlnt_up_Duration = 5;  /* default: 5 */
 
 ////////////////////////////////////////////////////////////
 ////  Text-Color-Option:                                ////
@@ -124,7 +124,7 @@ rlnt_up_Duration      = 5;             /*  default: 5  */
 ////  You can use this site to find a fitting color:    ////
 ////  http://bit.ly/2f543cr                             ////
 ////////////////////////////////////////////////////////////
-rlnt_up_FontColor     = [1,1,1,1];     /* default: [1,1,1,1] */
+rlnt_up_FontColor = [1,1,1,1]; /* default: [1,1,1,1] */
 
 ////////////////////////////////////////////////////////////
 ////  Background-Color-Option:                          ////
@@ -136,7 +136,7 @@ rlnt_up_FontColor     = [1,1,1,1];     /* default: [1,1,1,1] */
 ////  You can use this site to find a fitting color:    ////
 ////  http://bit.ly/2f543cr                             ////
 ////////////////////////////////////////////////////////////
-rlnt_up_BgColor       = [0,0.2,0,0.7]; /* default: [0,0.2,0,0.7] */
+rlnt_up_BgColor = [0,0.2,0,0.7]; /* default: [0,0.2,0,0.7] */
 
 ////////////////////////////////////////////////////////////
 ////  Developer-Option:                                 ////
@@ -144,19 +144,19 @@ rlnt_up_BgColor       = [0,0.2,0,0.7]; /* default: [0,0.2,0,0.7] */
 ////  to help devs finding bugs in this script.         ////
 ////  DON'T EDIT IF YOU DON'T KNOW WHAT YOU ARE DOING!  ////
 ////////////////////////////////////////////////////////////
-rlnt_up_debug         = false;         /* default: false */
+rlnt_up_debug = false; /* default: false */
 publicVariableServer "rlnt_up_debug";
 
 
 /*  Don't edit blow  */
 if (rlnt_debug) then {
-    diag_log "[RLNT][MAIN] The Update Panel Config was succesfully loaded!";
+	diag_log "[RLNT][MAIN] The Update Panel Config was succesfully loaded!";
 };
 
 rlnt_up_defaults = [rlnt_up_Side,rlnt_up_Style,rlnt_up_Header,rlnt_up_Line1,rlnt_up_Line2,rlnt_up_Img,rlnt_up_Duration,rlnt_up_FontColor,rlnt_up_BgColor];
 
 if (rlnt_up_debug) then {
-    diag_log format ["[RLNT][UP] The default variable array is: %1.", str(rlnt_up_defaults)];
+	diag_log format ["[RLNT][UP] The default variable array is: %1.", str(rlnt_up_defaults)];
 };
 
 rlnt_up_configLoaded = true;
